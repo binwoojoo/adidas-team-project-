@@ -359,8 +359,15 @@ section.trend-now .show-all a:hover {
 section.trend-now .trend-list {
   margin-top: 30px;
   display: flex;
-  overflow: auto;
+  overflow-x : scroll;
   /* border: 4px solid #ff0000; */
+}
+section.trend-now .trend-list::-webkit-scrollbar {
+  height: 5px;
+  background: #cfcfcf;
+}
+section.trend-now .trend-list::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
 }
 section.trend-now .trend-list .trend-item {
   /* border: 4px solid #99ff00; */
@@ -481,12 +488,15 @@ section.trend-now .trend-list .trend-item:hover .price {
   margin: 0 auto;
   display: flex;
 }
+.footer-wrap .footer-menu ul {
+  width: 16.66%;
+}
 .footer-wrap .footer-menu h2 {
   font-size: 20px;
   font-weight: 800;
+  line-height: 25px;
   margin-top: 50px;
   margin-bottom: 20px;
-  margin-right: 100px;
   white-space: nowrap;
 }
 .footer-wrap .footer-menu li {
@@ -502,11 +512,14 @@ section.trend-now .trend-list .trend-item:hover .price {
   margin: 0 auto;
   /* border: 1px solid #000; */
 }
+.footer-wrap .nav-box i {
+  font-size: 26px;
+}
 .footer-end {
   /* border: 4px solid #dff300; */
   background: #26252e;
   width: 100%;
-  height: 140px;
+  height: 120px;
 }
 .footer-end .option-list {
   /* border: 4px solid rgb(0, 92, 34)fff; */
